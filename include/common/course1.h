@@ -30,6 +30,12 @@
 #define TEST_ERROR          (1)
 #define TEST_NO_ERROR       (0)
 #define TESTCOUNT           (8)
+#ifndef BASE_16
+#define BASE_16 (16)
+#endif
+#ifndef BASE_10
+#define BASE_10 (10)
+#endif
 
 /**
  * @brief function to run course1 materials

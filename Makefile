@@ -27,8 +27,8 @@
 #      HOST - Default platform
 #      MSP342 - Target cross-compiled platform
 #
-# Author: vtotient
-# Date:   April 29, 2021
+# Author: Stephane NGNEPIEPAYE
+# Date:   09/05/2021
 #
 #------------------------------------------------------------------------------
 include sources.mk
@@ -53,7 +53,7 @@ EXTRA = -mthumb \
 	-mfpu=fpv4-sp-d16
 
 
-TARGET = c1m2
+TARGET = course1
 
 ifeq ($(PLATFORM), MSP432)
 	# Compiler Flags & Defines
@@ -64,7 +64,7 @@ ifeq ($(PLATFORM), MSP432)
 				-march=$(ARCH) \
 				--specs=$(SPECS) \
 				$(EXTRA)
-        CPPFLAGS = -DMSP432 $(INCLUDES)
+        CPPFLAGS = -DCOURSE1 -DMSP432 $(INCLUDES)
         LDFLAGS = -Wl,-Map=$(TARGET).map \
 		  			-L ../ $(LINKER_FILE)
         OBJDUMP = arm-none-eabi-objdump
@@ -75,7 +75,7 @@ else
 	CC = gcc
 	LD = ld
 	CFLAGS = $(G_FLAGS)
-	CPPFLAGS = -DHOST $(INCLUDES)
+	CPPFLAGS = -DCOURSE1 -DHOST $(INCLUDES)
 	LDFLAGS = -Wl,-Map=$(TARGET).map
 	OBJDUMP = objdump
 	SIZE = size

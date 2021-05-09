@@ -10,14 +10,12 @@
  *****************************************************************************/
 /**
  * @file main.c
- * @brief Main entry point to the C1M2 Assessment
+ * @brief Main entry point to the Course1 final Assessment
  *
- * This file contains the main code for the C1M2 assesment. Students
- * are not to change any of the code, they are instead supposed to compile
- * these files with their makefile.
+ * This file contains the main code for the Course1 final assesment. 
  *
- * @author Alex Fosdick
- * @date April 1 2017
+ * @author Stephane NGNEPIEPAYE WEMBE
+ * @date Mai 09, 2021
  *
  */
 #include "platform.h"

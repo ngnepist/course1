@@ -29,21 +29,6 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
-void main() {
-
-  unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
-                              114, 88,   45,  76, 123,  87,  25,  23,
-                              200, 122, 150, 90,   92,  87, 177, 244,
-                              201,   6,  12,  60,   8,   2,   5,  67,
-                                7,  87, 250, 230,  99,   3, 100,  90};
-
-  /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
-  printf("Unsorted array\n");
-  print_array(test, SIZE);
-  print_statistics(test, SIZE);
-}
-
 /* Add other Implementation File Code Here */
 void print_statistics(unsigned char* arrayData, unsigned int arraySize){
     sort_array(arrayData, arraySize);
@@ -63,8 +48,8 @@ void print_statistics(unsigned char* arrayData, unsigned int arraySize){
 
 
 void print_array(unsigned char* arrayData, unsigned int arraySize){
-    unsigned int i = 0;
     #ifdef VERBOSE
+    unsigned int i = 0;
     for (i=0 ; i<arraySize ; i++){
         PRINTF("element %d : %u \n",i,(unsigned int)(arrayData[i]));
     }
