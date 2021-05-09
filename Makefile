@@ -41,7 +41,8 @@ G_FLAGS = -std=c99 \
 	  -g \
 	  -O0 \
 	  -Wall \
-	  -Werror
+	  -Werror #\ 
+#	  -DVERBOSE #to uncomment -DVERBOSE if you want to raise VERBOSE flag and active print_array() in stats.c 
 
 # Architectures Specific Flags for MSP432.
 LINKER_FILE = -T msp432p401r.lds

@@ -15,4 +15,5 @@ stats.o: src/stats.c /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h include/common/stats.h
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h include/common/stats.h \
+ include/common/platform.h
